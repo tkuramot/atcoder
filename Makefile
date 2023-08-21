@@ -1,8 +1,13 @@
 INCLUDES = -I ./ac-library
 CFLAGS = -std=c++17 -Wall -Wextra -Werror -O2
-exe = a.out
+NAME = main
 
-all:
-	g++ main.cpp $(CFLAGS) $(INCLUDES)
-	@./$(exe)
-	@$(RM) $(exe)
+all: $(NAME)
+
+$(NAME):
+	g++ main.cpp -o $@ $(CFLAGS) $(INCLUDES)
+	@./$@
+
+fclean:
+	$(RM) $(NAME)
+	@git checkout .
