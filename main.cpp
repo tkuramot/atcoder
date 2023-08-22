@@ -40,7 +40,9 @@ using vb = vector<bool>;
 
 /* REP macro */
 #define reps(i, a, n) for (ll i = (a); i < (ll)(n); ++i)
+#define rreps(i, n, a) for (ll i = (n); i >= (ll)(a); --i)
 #define rep(i, n) reps(i, 0, n)
+#define rrep(i, n) rreps(i, n, 0)
 
 /* debug */
 #define debug(x) cerr << "\033[33m(line:" << __LINE__ << ") " << #x << ": " << x << "\033[m" << endl;

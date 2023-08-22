@@ -5,8 +5,8 @@ NAME = main
 all: $(NAME)
 
 $(NAME):
-	g++ main.cpp -o $@ $(CFLAGS) $(INCLUDES)
-	@./$@
+	g++ main.cpp $(CFLAGS) $(INCLUDES)
+	./a.out
 
 fclean:
 	$(RM) $(NAME)
