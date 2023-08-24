@@ -8,6 +8,5 @@ $(NAME):
 	g++ main.cpp $(CFLAGS) $(INCLUDES)
 	./a.out
 
-fclean:
+clean:
 	$(RM) $(NAME)
-	@git checkout .
