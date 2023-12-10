@@ -1,12 +1,13 @@
 INCLUDES = -I ./ac-library
-CFLAGS = -std=c++17 -Wall -Wextra -Werror -O2
-NAME = main
+CFLAGS = -std=c++17 -Wall -Wextra -Werror -O2 -fsanitize=address
+NAME = a.out
 
 all: $(NAME)
 
+.PHONY: $(NAME)
 $(NAME):
-	g++ main.cpp $(CFLAGS) $(INCLUDES)
-	./a.out
+	g++ main.cpp -o $(NAME) $(CFLAGS) $(INCLUDES)
+	./$(NAME)
 
 clean:
 	$(RM) $(NAME)
