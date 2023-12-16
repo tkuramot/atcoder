@@ -11,3 +11,6 @@ $(NAME):
 
 copy:
 	cat main.cpp | pbcopy
+
+reset:
+	git checkout .
