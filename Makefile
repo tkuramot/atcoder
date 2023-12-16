@@ -9,5 +9,5 @@ $(NAME):
 	g++ main.cpp -o $(NAME) $(CFLAGS) $(INCLUDES)
 	./$(NAME)
 
-clean:
-	$(RM) $(NAME)
+copy:
+	cat main.cpp | pbcopy
