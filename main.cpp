@@ -39,10 +39,8 @@ using vb = vector<bool>;
 #define all(obj) (obj).begin(), (obj).end()
 
 /* REP macro */
-#define reps(i, a, n) for (ll i = (a); i < (ll)(n); ++i)
-#define rreps(i, n, a) for (ll i = (n); i >= (ll)(a); --i)
-#define rep(i, n) reps(i, 0, n)
-#define rrep(i, n) rreps(i, n, 0)
+#define rep(i, a, n) for (ll i = (a); i < (ll)(n); ++i)
+#define rrep(i, n, a) for (ll i = (n); i >= (ll)(a); --i)
 
 /* debug */
 #define debug(x)                                                               \
@@ -87,14 +85,14 @@ struct dsu {
 
   vector<vector<int>> groups() {
     vi roots(_n, 0), group_siz(_n, 0); // 各頂点のroot、rootと連結する頂点の個数
-    rep(i, _n) {
+    rep(i, 0, _n) {
       roots[i] = root(i);
       group_siz[roots[i]]++;
     }
 
     vvi result(_n);
-    rep(i, _n) { result.reserve(group_siz[i]); }
-    rep(i, _n) { result[roots[i]].pb(i); }
+    rep(i, 0, _n) { result.reserve(group_siz[i]); }
+    rep(i, 0, _n) { result[roots[i]].pb(i); }
     result.erase(remove_if(all(result), [&](const vi &v) { return v.empty(); }),
                  result.end()); // 空の要素を除外する
     return result;
@@ -112,6 +110,4 @@ ll modpow(ll x, ll n, ll _mod = mod) {
   return res;
 }
 
-int main() {
-  return 0;
-}
+int main() { return 0; }
