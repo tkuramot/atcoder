@@ -1,5 +1,5 @@
-INCLUDES = -I ./ac-library
-CFLAGS = -std=c++17 -Wall -Wextra -Werror -O2 -fsanitize=address
+INCLUDES = -I .
+CFLAGS = -std=c++20 -Wall -Wextra -Werror -O3 -fsanitize=address
 NAME = a.out
 SRC = main.cpp
 

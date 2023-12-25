@@ -49,9 +49,10 @@ using vb = vector<bool>;
 
 /* const */
 // const ll mod = 998244353;
-const ll mod = 1000000007;
+// const ll mod = 1000000007;
 
 /* lib */
+/*
 struct dsu {
   int _n;
   vector<int> par, rank, siz;
@@ -109,6 +110,7 @@ ll modpow(ll x, ll n, ll _mod = mod) {
   }
   return res;
 }
+*/
 
 int main() {
   return 0;

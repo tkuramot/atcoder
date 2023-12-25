@@ -1,0 +1,22 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-O3",
+      "-fsanitize=address",
+      "-I",
+      ".",
+      "-o",
+      "a.out",
+      "main.cpp"
+    ],
+    "directory": "/Users/kura/Documents/atcoder-template",
+    "file": "/Users/kura/Documents/atcoder-template/main.cpp",
+    "output": "/Users/kura/Documents/atcoder-template/a.out"
+  }
+]
