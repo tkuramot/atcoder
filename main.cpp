@@ -47,10 +47,6 @@ using vb = vector<bool>;
   cerr << "\033[33m(line:" << __LINE__ << ") " << #x << ": " << x << "\033[m"  \
        << endl;
 
-/* const */
-// const ll mod = 998244353;
-// const ll mod = 1000000007;
-
 /* lib */
 /*
 struct dsu {
