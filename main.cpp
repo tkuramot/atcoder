@@ -19,7 +19,7 @@
 #include <unordered_map>
 #include <utility>
 #include <vector>
-// #include <atcoder/all>
+#include <atcoder/all>
 
 using namespace std;
 // using namespace atcoder;
