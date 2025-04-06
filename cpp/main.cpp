@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <atcoder/all>
 #include <bitset>
 #include <climits>
 #include <cmath>
@@ -22,7 +21,6 @@
 #include <vector>
 
 using namespace std;
-using namespace atcoder;
 
 /* alias */
 using ll = long long;

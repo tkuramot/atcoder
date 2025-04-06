@@ -1,0 +1,6 @@
+CompileFlags:
+  Add: ["-std=c++2a", "-Wall", "-Wextra", "-Werror", "-O3", "-fsanitize=address", "-I atcoder"]
+
+Diagnostics:
+  Suppress: ["unused-includes"]
+
