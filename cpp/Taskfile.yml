@@ -1,7 +1,9 @@
 version: '3'
 
 tasks:
-  run:
+  default:
+    aliases:
+      - run
     cmd: c++ -std=c++20 -Wall -Wextra -Werror -O3 -fsanitize=address -I . main.cpp -o a.out
 
   copy:
