@@ -1,7 +1,9 @@
 version: '3'
 
 tasks:
-  run:
+  default:
+    aliases:
+      - run
     cmd: python3 main.py
 
   copy:
