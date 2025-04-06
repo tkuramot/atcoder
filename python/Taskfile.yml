@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  run:
+    cmd: python3 main.py
+
+  copy:
+    cmd: cat main.py | pbcopy
