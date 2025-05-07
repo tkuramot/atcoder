@@ -45,3 +45,11 @@ class UnionFind():
 
     def __str__(self):
         return '\n'.join([f'{r}: {m}' for r, m in self.groups().items()])
+
+
+def rot90(g):
+    return list(zip(*g[::-1]))
+
+
+def rot270(g):
+    return list(zip(*g))[::-1]
